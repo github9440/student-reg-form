@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  student registration form"
+        android:textColor="#512DA8"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  name"
+        android:textColor="#303F9F"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  enter student name"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  roll number"
+        android:textColor="#303F9F"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/rollno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  enter rollnumber"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  mail id"
+        android:textColor="#303F9F"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/mailid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  enter mail-id"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  mobile number"
+        android:textColor="#303F9F"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="  enter student mobile number"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  password"
+        android:textColor="#303F9F"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  enter student password"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  gender"
+        android:textColor="#303F9F"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+<RadioButton
+    android:id="@+id/female"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="female"
+    android:textSize="15sp"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="male"
+        android:textSize="15sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  select branch"
+        android:textSize="25sp"
+        android:textColor="#303F9F"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:entries="@array/branches"
+        android:id="@+id/sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
